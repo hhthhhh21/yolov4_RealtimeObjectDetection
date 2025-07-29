@@ -1,7 +1,7 @@
 import telegram
 
 # Token của bot
-my_token = "your-token-api-key"
+my_token = "tokenAPIKeyHere"
 
 # Tạo bot
 bot = telegram.Bot(token=my_token)
