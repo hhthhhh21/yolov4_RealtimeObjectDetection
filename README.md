@@ -1,4 +1,4 @@
-# Intrusion Detection using YOLOv4-Tiny
+# Realtime Object Detection using YOLOv4-Tiny
 
 ## Introduction
 
@@ -10,19 +10,20 @@ This project implements a real-time intrusion detection system using the YOLOv4-
 - Plays an **alarm sound** to deter intrusion  
 
 It is designed for scenarios requiring **automated security monitoring** using low-latency object detection.
+You can watch a short [**demo video here**](https://youtu.be/orFa52maBXw?si=LjydZJmOwiLJoZgR) to see the system in action.
 
 ---
 
 ## Features
 
-- ✅ Real-time object detection using YOLOv4-Tiny (OpenCV DNN)
-- ✅ Polygon-based danger zone with shapely geometry
-- ✅ Send alerts via:
+- Real-time object detection using YOLOv4-Tiny (OpenCV DNN)
+- Polygon-based danger zone with shapely geometry
+- Send alerts via:
   - Telegram bot (with image and warning)
   - Email with photo attachment
   - Sound alarm (local audio)
-- ✅ Asynchronous messaging and thread-safe scheduling
-- ✅ Modular codebase (image sending, sound, email, main detection)
+- Asynchronous messaging and thread-safe scheduling
+- Modular codebase (image sending, sound, email, main detection)
 
 ---
 
@@ -30,31 +31,32 @@ It is designed for scenarios requiring **automated security monitoring** using l
 
 ```
 IntrusionDetection_YOLOv4/
-├── main.py                 # Entry point: start camera and detection
-├── yolodetect.py           # YOLOv4 detection class and alert handling
-├── email_noti.py           # Send email with photo attachment
-├── telegram_noti.py        # Send photo alert via Telegram
-├── send_photo.py           # Utility: resize and save alert image
-├── sound.py                # Play local alarm sound
-├── y2mate.com-[audio].mp3  # Alarm sound file
-├── setup.txt               # Setup instructions and requirements
-├── slide_presentation.pdf  # Project summary (PDF)
+└── code/
+    ├── main.py                 # Entry point: start camera and detection
+    ├── yolodetect.py           # YOLOv4 detection class and alert handling
+    ├── email_noti.py           # Send email with photo attachment
+    ├── telegram_noti.py        # Send photo alert via Telegram
+    ├── send_photo.py           # Utility: resize and save alert image
+    ├── sound.py                # Play local alarm sound
+    ├── y2mate.com-[audio].mp3  # Alarm sound file
+    ├── setup.txt               # Setup instructions and requirements
 └── model/
     ├── yolov4-tiny.weights
     ├── yolov4-tiny.cfg
     └── classnames.txt
+├── slide_presentation.pdf  # Project summary
 ```
 
 ---
 
 ## Setup Instructions
 
-> ⚠️ Ensure Python 3.10+ and required packages are installed.
+> Ensure Python 3.10+ and required packages are installed.
 
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/IntrusionDetection_YOLOv4.git
+git clone https://github.com/hhthhhh21/IntrusionDetection_YOLOv4.git
 cd IntrusionDetection_YOLOv4
 ```
 
