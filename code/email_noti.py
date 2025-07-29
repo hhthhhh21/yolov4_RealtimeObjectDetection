@@ -4,11 +4,11 @@ from email.mime.image import MIMEImage
 from email.mime.text import MIMEText
 import asyncio
 
-async def send_email_with_image(subject, body, to_email, image_path, sender_email="your_email@gmail.com", sender_password="your_password"):
+async def send_email_with_image(subject, body, to_email, image_path, sender_email="emailHere", sender_password="passwordHere"):
     try:
         # Thông tin tài khoản email của bạn
-        sender_email = "your_email@gmail.com"
-        sender_password = "your_password"
+        sender_email = "emailHere"
+        sender_password = "passwordHere"
 
         # Đọc nội dung của hình ảnh
         with open(image_path, "rb") as image_file:
